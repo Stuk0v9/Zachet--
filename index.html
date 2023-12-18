@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Первая страница</title>
+</head>
+<body>
+  <h1>Первая страница</h1>
+
+  <label for="idInput">Введите показатель Id:</label>
+  <input type="text" id="idInput">
+
+  <button onclick="saveId()">Готово</button>
+
+  <script>
+    function saveId() {
+      var id = document.getElementById("idInput").value;
+      localStorage.setItem("Id", id);
+      window.location.href = "2.html";
+    }
+  </script>
+</body>
+</html>
